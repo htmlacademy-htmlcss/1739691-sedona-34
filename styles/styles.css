@@ -133,7 +133,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
 }
 
 .advantages-list-item{
@@ -321,7 +320,6 @@ body {
 
 .main-footer{
   background-color: #FFFFFF;
-
 }
 
 .footer-container{
@@ -348,7 +346,6 @@ body {
   color: #000000;
   justify-content: center;
   margin-left: auto;
-
 }
 
 .social-logo{
