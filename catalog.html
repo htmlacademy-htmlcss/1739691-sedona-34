@@ -3,49 +3,52 @@
 
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <title>Каталог</title>
   </head>
 
   <body>
-    <div class="index-container">
+    <div class="main-container">
       <header class="main-header">
-        <nav class="navigation">
-          <a class="site-logo" href="index.html">
-            <img class="main-logo" src="img/sedona.svg" width="139" height="70" alt="Логотип Седоны." />
-          </a>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html"> Главная </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#"> О Седоне </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">
-                Гостиницы
-              </a>
-            </li>
-          </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img src="img/search.svg" width="18" height="18" alt="Иконка поиска." />
-                <span class="visually-hidden"> Поиск </span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img src="img/favorite.svg" width="18" height="17" alt="Избранные отели." />
-                <span class="visually-hidden"> Избранное </span>
-                <span class="favorites"> 12 </span>
-              </a>
-            </li>
-            <li class="navigation-item navigation-item-button">
-              <a class="button nav-button" href="#"> Хочу сюда! </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="navigation-container">
+          <nav class="navigation">
+            <a class="site-logo" href="index.html">
+              <img class="main-logo" src="img/sedona.svg" width="139" height="70" alt="Логотип Седоны." />
+            </a>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link" href="index.html"> Главная </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#"> О Седоне </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-current" href="catalog.html">
+                  Гостиницы
+                </a>
+              </li>
+            </ul>
+            <ul class="navigation-list-user navigation-user">
+              <li class="navigation-item-user">
+                <a class="navigation-link-user" href="#">
+                  <img src="img/search.svg" width="18" height="18" alt="Иконка поиска." />
+                  <span class="visually-hidden"> Поиск </span>
+                </a>
+              </li>
+              <li class="navigation-item-user">
+                <a class="navigation-link-user navigation-link-favorite" href="#">
+                  <img src="img/favorite.svg" width="18" height="17" alt="Избранные отели." />
+                  <span class="visually-hidden"> Избранное </span>
+                </a>
+              </li>
+              <li class="navigation-item navigation-item-button">
+                <a class="button navigation-button" href="#"> Хочу сюда! </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main class="main-catalog">
@@ -72,19 +75,19 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфрастуктура:</legend>
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-list-item">
+                <li class="catalog-list-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="facilities" checked />
                     Бассейн
                   </label>
                 </li>
-                <li class="catalog-filter-list-item">
+                <li class="catalog-list-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="facilities" checked />
                     Парковка
                   </label>
                 </li>
-                <li class="catalog-filter-list-item">
+                <li class="catalog-list-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="facilities" />
                     Wi-Fi
@@ -96,19 +99,19 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-list-item">
+                <li class="catalog-list-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="room-type" checked />
                     Гостиница
                   </label>
                 </li>
-                <li class="catalog-filter-list-item">
+                <li class="catalog-list-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="room-type" />
                     Мотель
                   </label>
                 </li>
-                <li class="catalog-filter-list-item">
+                <li class="catalog-list-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="room-type" />
                     Апартаменты
@@ -252,7 +255,7 @@
             </ul>
 
             <p class="hotels-on-page">Гостиниц на странице:</p>
-            <select class="select-control-hotels-on-page" aria-label="Сортировка">
+            <select class="hotels-sorting" aria-label="Сортировка">
               <option value="4">4</option>
               <option value="10">10</option>
               <option value="20">20</option>
@@ -269,9 +272,9 @@
             <label class="visually-hidden" for="newsletter-email">
               Ваш e-mail
             </label>
-            <input class="field newsletter-catalog" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email"
-                required />
-            <button class="newsletter-button" type="submit">Подписаться</button>
+            <input class="field newsletter-catalog" type="email" placeholder="Ваш e-mail" name="newsletter-email"
+              id="newsletter-email" required />
+            <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -300,11 +303,10 @@
           </ul>
           <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="social-logo" href="https://htmlacademy.ru">
-            <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Логотип академии." />
+            <img src="img/logo-htmlacademy.svg" width="115" height="32" alt="Логотип академии." />
           </a>
         </div>
       </footer>
     </div>
   </body>
-
 </html>
