@@ -129,7 +129,8 @@ body {
   padding-top: 2px;
 }
 
-.main-index {
+.main-index,
+.main-catalog {
   flex-grow: 1;
 }
 
@@ -376,7 +377,25 @@ body {
 
 .social-link {
   display: block;
-  padding: 7px 13px;
+  min-height: 40px;
+}
+
+.social-vk{
+  background-image: url(../img/social-vk.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-tg{
+  background-image: url(../img/social-tg.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-youtube{
+  background-image: url(../img/social-youtube.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .contact-phone {
@@ -719,8 +738,8 @@ body {
 
 .sorting-button {
   display: block;
-  width: 48px;
-  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
