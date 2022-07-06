@@ -455,6 +455,11 @@ body {
   color: #333333;
 }
 
+.social-logo{
+  display: flex;
+  align-items: center;
+}
+
 .social-logo:hover{
   fill: #756157;
 }
@@ -477,7 +482,7 @@ body {
   background-size: 100% auto;
   color: #ffffff;
   background-color: #3f5e72;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .hotel-filter-title {
@@ -538,6 +543,10 @@ body {
   margin: 0;
 }
 
+.catalog-filter-group:first-child {
+  margin-left: 1px;
+}
+
 .catalog-filter-group:nth-child(3) {
   margin-left: auto;
   width: 288px;
@@ -547,7 +556,12 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  padding-bottom: 30px;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.catalog-filter-group:nth-child(3) .catalog-filter-title{
+  margin: 0 0 34px;
 }
 
 .catalog-filter-list {
@@ -569,9 +583,26 @@ body {
   position: relative;
   display: block;
   padding-left: 39px;
+  cursor: pointer;
 }
 
-.control-mark{
+.control:hover .control-mark-checkbox,
+.control:hover .control-mark-radio{
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus .control-mark-checkbox,
+.control:focus .control-mark-radio{
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark-checkbox,
+.control:active .control-mark-radio{
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.control-mark-checkbox{
   position: absolute;
   width: 20px;
   height: 20px;
@@ -581,8 +612,30 @@ body {
   border: none;
 }
 
+.control-input:checked + .control-mark-checkbox{
+  background-image: url(../img/checkbox-vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-mark-radio{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.control-input:checked + .control-mark-radio{
+  background-image: url(../img/radio-vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .range-wrapper-inputs{
-  margin-bottom: 32px;
+  margin-bottom: 29px;
   display: flex;
   position: relative;
 }
@@ -644,6 +697,8 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
+  outline: none;
+  appearance: textfield;
 }
 
 .catalog-filter-label{
@@ -670,12 +725,12 @@ body {
 
 .input-min-price{
   border-radius: 4px 0 0 4px;
-  border-right: 1px solid #FFFFFF;
+  /* border-right: 1px solid #FFFFFF; */
 }
 
 .input-max-price{
   border-radius: 0 4px 4px 0;
-  border-left: 1px solid #FFFFFF;
+  /* border-left: 1px solid #FFFFFF; */
 }
 
 .catalog-filter-input::-webkit-outer-spin-button,
@@ -693,6 +748,7 @@ body {
   border-color: rgba(255, 255, 255, 1);
   outline: 3px solid #81B3D2;
   outline-offset: -5px;
+  z-index: 1;
 }
 
 .catalog-filter-input:active{
@@ -708,7 +764,7 @@ body {
 
 .search-result{
   display: flex;
-  margin-bottom: 56px;
+  margin-bottom: 57px;
 }
 
 .search-result-title {
@@ -716,21 +772,28 @@ body {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
+  padding-left: 2px;
   align-self: center;
   text-transform: uppercase;
 }
 
 .select-control {
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   min-width: 290px;
-  margin-left: auto;
-  margin-right: 78px;
-  padding-left: 20px;
+  margin: 0 78px 0 191px;
+  padding-left: 18px;
   border: 2px solid #F2F2F2;
   border-radius: 4px;
   appearance: none;
+}
+
+.select{
+  background-image: url(../img/select-arrow-vector.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .select:hover,
@@ -793,6 +856,10 @@ body {
   grid-column: 1/3;
 }
 
+.list-item-img{
+  display: block;
+}
+
 .hotel-item {
   margin: 0;
   font-size: 18px;
@@ -817,7 +884,7 @@ body {
 
 .pagination-container {
   display: flex;
-  padding-top: 30px;
+  padding-top: 28px;
   margin: 0 0 25px;
   border-top: 1px solid #E6E6E6;
 }
@@ -829,7 +896,7 @@ body {
   line-height: 36px;
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 0 0 0 2px;
   padding: 0;
 }
 
@@ -881,6 +948,7 @@ body {
   border: 2px solid #F2F2F2;
   border-radius: 4px;
   padding-left: 20px;
+  margin-right: 2px;
   appearance: none;
 }
 
@@ -989,6 +1057,7 @@ body {
 }
 
 .button-reset {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -998,7 +1067,6 @@ body {
   cursor: pointer;
   align-self: center;
   margin: 20px 0 0 0;
-  padding: 5px 0;
 }
 
 .button-reset:hover {
