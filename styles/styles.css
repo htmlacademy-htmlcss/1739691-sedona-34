@@ -497,7 +497,7 @@ body {
   list-style-type: none;
   font-size: 16px;
   line-height: 21px;
-  margin: 0 0 40px;
+  margin: 0 0 40px 2px;
   padding: 0;
   display: flex;
 }
@@ -582,7 +582,7 @@ body {
 .control{
   position: relative;
   display: block;
-  padding-left: 39px;
+  padding-left: 40px;
   cursor: pointer;
 }
 
@@ -635,7 +635,7 @@ body {
 }
 
 .range-wrapper-inputs{
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   display: flex;
   position: relative;
 }
