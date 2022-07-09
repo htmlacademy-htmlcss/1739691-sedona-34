@@ -80,7 +80,7 @@
               <ul class="advantages-list-inline">
                 <li class="advantages-item-inline advantages-item advantages-item-house">
                   <h3 class="advantages-title advantages-title-inline advantages-title-house">
-                    Жилье
+                    Жильё
                   </h3>
                   <p class="advantages-description">
                     Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!
@@ -239,7 +239,7 @@
           </a>
         </div>
       </footer>
-      <div class="modal-container visually-hidden">
+      <div class="modal-container modal-hidden">
         <div class="modal">
           <section class="modal-section">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -249,45 +249,74 @@
             </button>
           </section>
 
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
               <label class="check-in-title field-group-title" for="check-in">
                 Дата Заезда:
               </label>
-              <input class="check-in-field field-group-input" type="text" id="check-in" name="check-in" value="27 апреля 2020">
+              <div class="modal-field-wrapper">
+                <input class="check-in-field field-group-input" type="text" placeholder="Укажите дату" id="check-in" name="check-in" required>
+                <button class="calendar" type="button">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="curentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+                </button>
+              </div>
               <span class="comment-message error-message">
                 Мы не можем отправить вас в прошлое.
               </span>
-            </p>
+            </div>
 
-            <p class="field-group">
+            <div class="field-group">
               <label class="check-out-title field-group-title" for="check-out">
                 Дата Выезда:
               </label>
-              <input class="check-out-field field-group-input" type="text" id="check-out" name="check-out" value="1 сентября 2021">
+              <div class="modal-field-wrapper">
+                <input class="check-out-field field-group-input" type="text" placeholder="Укажите дату" id="check-in" name="check-in" required>
+                <button class="calendar" type="button">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="curentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+                </button>
+              </div>
               <span class="comment-message">
                 На эти даты есть свободные номера. Пока есть.
               </span>
-            </p>
+            </div>
 
-            <p class="field-group">
+            <div class="field-group">
               <label class="adults-title field-group-title" for="adults">
                 Взрослые:
               </label>
-              <input class="adults-field field-group-input" type="text" id="adults" name="adults" value="2">
-            </p>
-
-            <p class="field-group">
-              <label class="kids-title field-group-title" for="kids">
-                Дети:
-              </label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button">
-
+              <div class="group-input-wrapper">
+                <input class="adults-field field-group-input" type="text" id="adults" name="adults" placeholder="2" required>
+                <button class="people-amount minus" type="button">
+                  <svg width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
                 </button>
+                <button class="people-amount plus" type="button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <span class="kids-title-wrap">
+                <label class="kids-title field-group-title" for="kids">
+                Дети:
+                </label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </span>
-              <input class="kids-field field-group-input" type="text" id="kids" name="kids" value="1">
-            </p>
+              <div class="group-input-wrapper">
+                <input class="kids-field field-group-input" type="text" id="kids" name="kids" placeholder="1">
+                <button class="people-amount minus" type="button">
+                  <svg width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+                </button>
+                <button class="people-amount plus" type="button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                </button>
+              </div>
+            </div>
             <button class="search-form-button">
                Найти
             </button>
