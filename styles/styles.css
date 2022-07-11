@@ -350,7 +350,7 @@ body {
 }
 
 .newsletter-description {
-  margin: 0 0 46px 0;
+  margin: 0 0 46px 3px;
 }
 
 .newsletter-description-index {
@@ -691,7 +691,7 @@ body {
   border: 2px solid #FFFFFF;
   background-color: transparent;
   margin: 0;
-  width: 144px;
+  width: 145px;
   color: #FFFFFF;
   font-family: inherit;
   font-size: 18px;
@@ -724,11 +724,13 @@ body {
 .input-min-price{
   border-radius: 4px 0 0 4px;
   padding: 12px 17px 11px;
+  margin-right: -1px;
 }
 
 .input-max-price{
   border-radius: 0 4px 4px 0;
   padding: 12px 15px 11px;
+  margin-left: -1px;
 }
 
 .catalog-filter-input::-webkit-outer-spin-button,
@@ -830,7 +832,7 @@ input[type="number"] {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin: 17px 0 0;
+  margin: 16px 0 0;
 }
 
 .hotel-list {
@@ -872,6 +874,26 @@ input[type="number"] {
   line-height: 21px;
 }
 
+.star-rate{
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 37px;
+  margin: 0;
+  padding: 0;
+}
+
+.four-star-rate{
+  background-image: url(../img/four-stars.svg);
+}
+
+.three-star-rate{
+  background-image: url(../img/three-stars.svg);
+}
+
+.two-star-rate{
+  background-image: url(../img/two-stars.svg);
+}
+
 .rating-value {
   font-size: 16px;
   line-height: 20px;
@@ -884,7 +906,7 @@ input[type="number"] {
 
 .pagination-container {
   display: flex;
-  padding-top: 28px;
+  padding-top: 29px;
   margin: 0 0 25px;
   border-top: 1px solid #E6E6E6;
 }
@@ -896,7 +918,7 @@ input[type="number"] {
   line-height: 36px;
   display: flex;
   align-items: center;
-  margin: 0 0 0 2px;
+  margin: 0 0 0 3px;
   padding: 0;
 }
 
@@ -946,7 +968,7 @@ input[type="number"] {
 .hotels-sorting {
   min-width: 160px;
   border-radius: 4px;
-  margin-right: 2px;
+  margin-right: 1px;
   appearance: none;
 }
 
@@ -965,6 +987,10 @@ input[type="number"] {
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.button{
+  outline: none;
 }
 
 .basic-button {
@@ -1431,7 +1457,10 @@ input[type="number"] {
   outline: none;
 }
 
-
 .modal-hidden{
-  display: none;
+  display: non;
+}
+
+.navigation-link-user:active + .modal-hidden{
+  display: block;
 }
