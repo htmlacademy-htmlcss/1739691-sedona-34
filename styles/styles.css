@@ -234,6 +234,10 @@ body {
   text-align: center;
 }
 
+.no-br-description{
+  padding: 0 30px;
+}
+
 .advantages-white {
   color: #ffffff;
 }
@@ -248,7 +252,7 @@ body {
 .advantages-item-inline {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: start;
   padding: 78px 85px 79px;
 }
 
@@ -263,8 +267,8 @@ body {
 .advantages-item-house::after {
   content: url(../img/hotels.svg);
   order: -1;
-  margin: 0 auto;
-  padding: 0;
+  margin: 3px auto 1px;
+  padding-left: 1px;
   width: 75px;
   height: 72px;
 }
@@ -272,7 +276,7 @@ body {
 .advantages-item-food::after {
   content: url(../img/food.svg);
   order: -1;
-  margin: 0 auto;
+  margin: 4px auto 2px;
   width: 74px;
   height: 70px;
 }
@@ -290,7 +294,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-column: 1/-1;
   background-image: url(../img/devils-bridge.jpg);
+  background-size: auto 100%;
   background-repeat: no-repeat;
+  background-color: #82b3d3;
 }
 
 .wrapper-bridge{
@@ -324,7 +330,7 @@ body {
 
 .hotel-search-description {
   min-width: 592px;
-  margin: 0 0 56px 0;
+  margin: 0 auto 56px;
 }
 
 .newsletter {
@@ -344,13 +350,14 @@ body {
 .newsletter-background {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   color: #ffffff;
   background-color: #3f5e72;
 }
 
 .newsletter-description {
-  margin: 0 0 46px 3px;
+  margin: 0 auto 46px;
+  width: 475px;
 }
 
 .newsletter-description-index {
@@ -723,13 +730,13 @@ body {
 
 .input-min-price{
   border-radius: 4px 0 0 4px;
-  padding: 12px 17px 11px;
+  padding: 12px 57px 11px 17px;
   margin-right: -1px;
 }
 
 .input-max-price{
   border-radius: 0 4px 4px 0;
-  padding: 12px 15px 11px;
+  padding: 12px 55px 11px 15px;
   margin-left: -1px;
 }
 
@@ -794,7 +801,7 @@ input[type="number"] {
   border: 2px solid #E5E5E5;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 18px;
+  padding-left: 16px;
   cursor: pointer;
 }
 
@@ -987,10 +994,6 @@ input[type="number"] {
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.button{
-  outline: none;
 }
 
 .basic-button {
@@ -1461,7 +1464,7 @@ input[type="number"] {
 }
 
 .modal-hidden{
-  display: non;
+  display: none;
 }
 
 .navigation-link-user:active + .modal-hidden{
